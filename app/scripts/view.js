@@ -1,4 +1,4 @@
-var MainView = Backbone.model.extend({
+var MainView = Backbone.View.extend({
 
 	className: 'container',
 
@@ -17,21 +17,4 @@ var MainView = Backbone.model.extend({
 })
 
 
-var WeatherView = Backbone.model.extend({
 
-	template: _.template($('#weather-template').text)
-
-	className: 'weather-container',
-
-	initialize: function(){
-
-		$('body').prepend(this.el)
-		this.render()
-	},
-
-	render: function(){
-
-		this.$el.html(this.template({weather: this.model}))
-	}
-
-})

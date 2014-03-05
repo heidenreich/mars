@@ -2,6 +2,24 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+
+// html { 
+//   background: url(http://mars.jpl.nasa.gov/MPF/parker/TwnPks_RkGdn_left_med.jpg) no-repeat center center fixed; 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   z-index: -20;
+// }
+
+.img-responsive {
+    position: absolute;
+    z-index: -20;
+    height: auto;
+    width: 100%;
+}
+
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -10,10 +28,10 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 /* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+// body {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+// }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
